@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Скачать Эмулятор Grib OS</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #1a1a1a; color: white; }
+        .container { display: flex; flex-direction: column; gap: 15px; width: 300px; }
+        
+        .btn { text-decoration: none; padding: 18px; text-align: center; border-radius: 8px; font-weight: bold; color: white; transition: 0.3s; }
+        
+        /* Основные кнопки */
+        .btn-rar { background: #4CAF50; } 
+        .btn-rar:hover { background: #45a049; transform: scale(1.02); }
+        
+        .btn-zip { background: #007bff; } 
+        .btn-zip:hover { background: #0056b3; transform: scale(1.02); }
+
+        /* Маленькая кнопка GitHub */
+        .btn-github-small { 
+            background: #333; 
+            padding: 10px; 
+            font-size: 14px; 
+            margin-top: 10px;
+            border: 1px solid #444;
+        }
+        .btn-github-small:hover { background: #444; color: #4CAF50; }
+        
+        .back-link { margin-bottom: 25px; color: #4CAF50; text-decoration: none; font-size: 14px; }
+        .back-link:hover { text-decoration: underline; }
+        .version-text { margin-top: 40px; color: #555; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Назад</a>
+    
+    <div class="container">
+        <!-- Кнопки скачивания архивов -->
+        <a href="ССЫЛКА_НА_RAR" class="btn btn-rar">Скачать RAR-Файл</a>
+        <a href="ССЫЛКА_НА_ZIP" class="btn btn-zip">Скачать ZIP-Файл</a>
+        
+        <!-- Маленькая кнопка GitHub для эмулятора -->
+        <a href="https://github.com/MotyaSolik/GribOS-lite-Emulator" target="_blank" class="btn btn-github-small">GitHub</a>
+    </div>
+
+    <div class="version-text">Grib OS v2.0.0-alpha</div>
+</body>
+</html>

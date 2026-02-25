@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Grib OS - Главная</title>
+    <style>
+        body { font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; background: #1a1a1a; color: white; }
+        h1 { font-size: 3.5rem; color: #4CAF50; margin-bottom: 40px; }
+        
+        /* Контейнер теперь вертикальный, чтобы кнопка GitHub была под первыми двумя */
+        .container { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+        .row { display: flex; gap: 20px; } /* Ряд для первых двух кнопок */
+
+        .btn { text-decoration: none; padding: 18px 35px; border-radius: 8px; font-weight: bold; color: white; transition: 0.3s; text-align: center; min-width: 200px; }
+        
+        .btn-iso { background: #007bff; }
+        .btn-iso:hover { background: #0056b3; }
+        
+        .btn-emu { background: #4CAF50; }
+        .btn-emu:hover { background: #45a049; }
+
+        /* Стиль для кнопки GitHub */
+        .btn-github { background: #333; border: 1px solid #444; }
+        .btn-github:hover { background: #444; transform: scale(1.05); }
+
+        .version-text { position: absolute; bottom: 30px; color: #555; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    <h1>Grib OS</h1>
+    
+    <div class="container">
+        <!-- Верхний ряд с двумя кнопками -->
+        <div class="row">
+            <a href="download.html" class="btn btn-iso">Скачать ISO-Файл</a>
+            <a href="emulator.html" class="btn btn-emu">Скачать Эмулятор</a>
+        </div>
+        
+        <!-- Кнопка GitHub снизу посередине -->
+        <a href="https://github.com/MotyaSolik/GribOS-Terminal" target="_blank" class="btn btn-github">GitHub</a>
+    </div>
+
+    <div class="version-text">Grib OS v2.0.0-alpha</div>
+</body>
+</html>
